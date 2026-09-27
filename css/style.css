@@ -1,0 +1,72 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #0d1420;
+  color: #e6ecf3;
+  min-height: 100vh;
+}
+header {
+  padding: 16px 24px;
+  background: #131f31;
+  border-bottom: 1px solid #24344d;
+}
+header h1 { font-size: 20px; margin-bottom: 10px; }
+nav a {
+  color: #9fb6d4;
+  text-decoration: none;
+  margin-right: 18px;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+nav a.active { background: #2b4a75; color: #fff; }
+main { padding: 24px; max-width: 1080px; margin: 0 auto; }
+
+.card {
+  background: #16233a;
+  border: 1px solid #24344d;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+.card h2 { font-size: 17px; margin-bottom: 12px; }
+
+form .row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; }
+label { display: flex; flex-direction: column; font-size: 13px; color: #9fb6d4; gap: 4px; }
+input, select, textarea {
+  background: #0d1420;
+  border: 1px solid #2c405f;
+  color: #e6ecf3;
+  border-radius: 6px;
+  padding: 7px 9px;
+  font-size: 14px;
+}
+button {
+  background: #2b6cb0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+button.ghost { background: transparent; border: 1px solid #2c405f; color: #9fb6d4; }
+button.danger { background: #9b2c2c; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 8px 10px; border-bottom: 1px solid #24344d; text-align: left; }
+th { color: #9fb6d4; font-weight: normal; font-size: 13px; }
+
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; }
+.badge.ok { background: #22543d; color: #9ae6b4; }
+.badge.pending { background: #744210; color: #fbd38d; }
+.badge.fault { background: #742a2a; color: #feb2b2; }
+.badge.confirmed { background: #2a4365; color: #90cdf4; }
+
+.notice { padding: 10px 14px; border-radius: 8px; margin-bottom: 14px; font-size: 14px; }
+.notice.warn { background: #4a3419; color: #fbd38d; }
+.notice.error { background: #4a1f1f; color: #feb2b2; }
+.notice.info { background: #1d3a5f; color: #90cdf4; }
+
+.muted { color: #7d93b2; font-size: 13px; }
+.version-log { font-size: 13px; color: #9fb6d4; margin-top: 6px; padding-left: 14px; border-left: 2px solid #2c405f; }
